@@ -1,0 +1,14 @@
+.title {
+  margin-top: 16px;
+}
+.menu-structure {
+  display: grid;
+  grid-template-columns: 135px 4fr 1fr;
+  align-items: center;
+
+  input {
+    height: 30px;
+    margin-right: 16px;
+    border-radius: 8px;
+  }
+}

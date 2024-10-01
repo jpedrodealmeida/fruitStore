@@ -1,0 +1,15 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+
+    <div><button mat-stroked-button (click)="goTo('/sale')" routerLinkActive="active">Sale</button></div>
+    <div><button mat-stroked-button (click)="goTo('/fruit')">Fruit</button></div>
+    <div><button mat-stroked-button (click)="goTo('/vegetables')">Vegetables</button></div>
+
+
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <router-outlet/>
+  </mat-drawer-content>
+
+</mat-drawer-container>

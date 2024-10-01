@@ -1,0 +1,15 @@
+
+<div class="list-structure">
+  @for (product of paginatedItems.data; track product) {
+    <app-product-card [product]="product" (click)="openProductDetails(product)">
+    </app-product-card>
+ }
+</div>
+<mat-paginator [length]="paginatedItems.pagination?.totalItems"
+  [pageSize]="paginatedItems.pagination?.pageSize"
+  [pageIndex]="paginatedItems.pagination?.currentPage"
+  [pageSizeOptions]="[6, 12, 24]"
+  (page)="handlePageEvent($event)"
+  aria-label="Select page">
+  </mat-paginator>
+
